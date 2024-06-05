@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    color: white;
+    background-color:black;
+    border: none;
+    height: 100px;
+    width: 700px;
+    font-size: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        height: 100px;
+        width: 90%;
+        font-size: 50px;
+    }
+}
+
+@keyframes example {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+img {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorChange {
+    0% { background-color: red; }
+    33% { background-color: green; }
+    66% { background-color: blue; }
+    100% { background-color: red; }
+}
+
+.color {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: colorChange 6s infinite;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-container {
+    margin: auto;
+}
+
+.baap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#cake {
+    margin-left: 260px;
+    display: flex;
+    height: 320px;
+    width: 310px;
+}
+
+.two {
+    width: 90%;
+}
+
+.balloon{
+    width: 100%;
+}
+.balloon2{
+    width: 100%;
+}
